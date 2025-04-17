@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_app/presentation/widgets/form/card_section.dart';
+import 'package:my_flutter_app/presentation/widgets/home/title-coin.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,6 +15,15 @@ class HomeScreen extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          TitleCoin(
+            title: 'Literature',
+            description: 'Analysis of literary works\n(stories, poems, plays)s',
+            buttonText: "Try now",
+            imageAsset: 'assets/images/logo_literature.png',
+            onTap: () {
+              // TODO: Navigate or action
+            },
+          ),
           // 📅 Lịch hôm nay
           CardSection(
             icon: Icons.calendar_today,

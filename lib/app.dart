@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Clean App',
+      title: 'Clean App',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light, // file config theme
       initialRoute: RouteGenerator.main, // tab bar 5 màn là route chính
